@@ -21,7 +21,7 @@ const Menu = ()=>{
                             <div className="content">
                                 <img src={item.img} alt={item.name} />
                                 <h4>{item.name}</h4>
-                                    <Ingredients ingredients={item.ingredients}></Ingredients>
+                                  
                                 <h3 className="price">$ {formatPrice (item.price) }</h3>
 
                                 <div className="btn-row">

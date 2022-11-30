@@ -8,8 +8,8 @@ const Navbar = ()=> {
     return (
 
         <nav className="main-nav">
-            <Link to="/"> <h3> <i className="fa-solid fa-pizza-slice"></i>Mamma Mia!</h3> </Link>
-            <Link to="/carrito"> <i class="fa-solid fa-cart-shopping">${cartTotal()}</i></Link>
+            <Link to="/"> <h1> <i className="fa-solid fa-paw"></i> TodoMascotas</h1> </Link>
+            <Link to="/carrito"> <i className="fa-solid fa-user"></i> <i className="fa-solid fa-heart"></i>  <i className="fa-solid fa-cart-shopping"> ${cartTotal()}</i></Link>
         </nav>
     )
 }

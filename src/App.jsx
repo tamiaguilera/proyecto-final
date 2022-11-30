@@ -1,4 +1,4 @@
-import { Form } from 'react-router-dom'
+
 import './App.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -15,6 +15,7 @@ import Payment from './views/Payment.jsx'
 import NotFound from './views/NotFound'
 
 import { formatPrice } from './utils/utils'
+import Carrusel from './components/Carrusel'
 
 
 
@@ -76,6 +77,7 @@ function App() {
       <Context.Provider value={globalState}>
         <BrowserRouter>
         <Navbar></Navbar>
+        <Carrusel/>
 
         <Routes>
           <Route path="/"element={ <Home /> } ></Route>
