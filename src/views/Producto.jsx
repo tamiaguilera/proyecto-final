@@ -2,10 +2,9 @@ import { useParams } from "react-router-dom"
 import { useContext, useState, useEffect } from "react"
 import Context from "../context/context.js"
 
-import Ingredients from "../components/Ingredients.jsx"
 import { formatPrice } from "../utils/utils.js"
 
-const Pizza = ()=>{
+const Producto = ()=>{
     const { id } = useParams()
     const { menu, addToCart} = useContext(Context)
 
@@ -49,4 +48,4 @@ return(
 
 }
 
-export default Pizza
+export default Producto

@@ -9,7 +9,7 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 
 import Home from './views/Home.jsx'
-import Pizza from './views/pizza.jsx'
+import Producto from './views/Producto.jsx'
 import Cart from './views/Cart.jsx'
 import Payment from './views/Payment.jsx'
 import NotFound from './views/NotFound'
@@ -77,11 +77,11 @@ function App() {
       <Context.Provider value={globalState}>
         <BrowserRouter>
         <Navbar></Navbar>
-        <Carrusel/>
+        
 
         <Routes>
           <Route path="/"element={ <Home /> } ></Route>
-          <Route path='/pizza/:id'element={ <Pizza /> } ></Route>
+          <Route path='/pizza/:id'element={ <Producto/> } ></Route>
           <Route path='/carrito'element={ <Cart /> } ></Route>
           <Route path='/pagar'element={ <Payment /> } ></Route>
           <Route path='*' element={ <NotFound /> } ></Route>

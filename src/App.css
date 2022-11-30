@@ -68,10 +68,20 @@ main{
     padding: 1rem;
  }
 
+ .card-favorito{
+   position: absolute;
+   top: 9px;
+   right: 20px;
+ }
+ .card-favorito i{
+   color: red;
+   font-size: 30px;
+ }
  .card .content{
     border: 1px solid #ccc;
 
  }
+
 
  .card .content img{
     width: 100%;

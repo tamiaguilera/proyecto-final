@@ -2,7 +2,6 @@ import {useNavigate} from "react-router-dom"
 import { useContext } from "react"
 import Context from "../context/context.js"
 
-import Ingredients from "./Ingredients.jsx"
 
 import { formatPrice } from "../utils/utils.js"
 
@@ -20,6 +19,9 @@ const Menu = ()=>{
                         <div className="card" key={item.id}>
                             <div className="content">
                                 <img src={item.img} alt={item.name} />
+                                <div className="card-favorito">
+                                    <i className="fa-solid fa-heart" />
+                                </div>
                                 <h4>{item.name}</h4>
                                   
                                 <h3 className="price">$ {formatPrice (item.price) }</h3>

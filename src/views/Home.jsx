@@ -1,15 +1,14 @@
-
-import Menu from "../components/Menu.jsx"
+import Carrusel from "../components/Carrusel.jsx"
+import CardList from "../components/CardList.jsx"
 
 const Home = ()=>{
     return (
         <div>
-    
+            <Carrusel/>
             <main>
-                <Menu></Menu>
+                <CardList></CardList>
             </main>
         </div>
-
     )
 }
 
