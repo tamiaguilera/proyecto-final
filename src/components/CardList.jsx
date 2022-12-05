@@ -1,6 +1,7 @@
 import {useNavigate} from "react-router-dom"
 import { useContext } from "react"
 import Context from "../context/context.js"
+import Heart from "./Heart.jsx"
 
 
 import { formatPrice } from "../utils/utils.js"

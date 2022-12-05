@@ -123,7 +123,6 @@ main{
     align-items: center;
     justify-content: center;
     padding: 1rem;
-
  }
 
  footer{
@@ -132,6 +131,7 @@ main{
     border-top: 1px solid rgb(217, 121, 57);
     width: 90%;
     margin: auto;
+    height: 96px;
  }
 
  .pizza-view{
@@ -250,6 +250,15 @@ main{
 
 .not-found p{
     margin-bottom: 3rem;
+}
+
+.vista-likes {
+   /* margin-top: 96px; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2rem;
+   min-height: calc(100vh - 128px);
 }
 
 .payment i {
