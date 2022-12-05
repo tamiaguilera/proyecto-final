@@ -13,6 +13,7 @@ import Producto from './views/Producto.jsx'
 import Cart from './views/Cart.jsx'
 import Payment from './views/Payment.jsx'
 import NotFound from './views/NotFound'
+import Likes from './views/Likes'
 
 import { formatPrice } from './utils/utils'
 import Carrusel from './components/Carrusel'
@@ -85,6 +86,7 @@ function App() {
           <Route path='/carrito'element={ <Cart /> } ></Route>
           <Route path='/pagar'element={ <Payment /> } ></Route>
           <Route path='*' element={ <NotFound /> } ></Route>
+          <Route path='/likes' element={ <Likes /> } ></Route>
 
         </Routes>
 
