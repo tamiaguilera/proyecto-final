@@ -15,7 +15,8 @@ import Payment from './views/Payment.jsx'
 import NotFound from './views/NotFound'
 
 import { formatPrice } from './utils/utils'
-import Carrusel from './components/Carrusel'
+
+import Registrar from './views/Registrar'
 
 
 
@@ -84,6 +85,7 @@ function App() {
           <Route path='/pizza/:id'element={ <Producto/> } ></Route>
           <Route path='/carrito'element={ <Cart /> } ></Route>
           <Route path='/pagar'element={ <Payment /> } ></Route>
+          <Route path='/registrar' element={ <Registrar /> } ></Route>
           <Route path='*' element={ <NotFound /> } ></Route>
 
         </Routes>

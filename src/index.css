@@ -47,3 +47,8 @@ ul{
 .btn-secondary{
     background: var(--secondaty);
 }
+.registrar{
+    margin-top: 96px;
+    width: 40%;
+
+}
