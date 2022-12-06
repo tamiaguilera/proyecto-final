@@ -10,7 +10,7 @@ const Menu = ()=>{
     const { menu , addToCart} = useContext(Context)
     const navigate = useNavigate()
 
-    const viewPizza = (id)=> navigate(`/pizza/${id}`)
+    const viewPizza = (id)=> navigate(`/alimento/${id}`)
 
     return(
         <section className="menu">

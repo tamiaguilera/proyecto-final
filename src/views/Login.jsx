@@ -14,7 +14,7 @@ const Login = () => {
                 <div className="col-12 mb-3">
                     <input type="text" className="form-control" placeholder="Password" aria-label="password"/>
                 </div>
-               <button type="button" class="btn btn-primary">Iniciar</button>
+               <button type="button" className="btn btn-primary">Iniciar</button>
                <Link to="/registrar" className="btn btn-primary">Registrate</Link>
             </div>
         </main>
