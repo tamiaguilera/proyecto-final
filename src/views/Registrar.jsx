@@ -16,7 +16,7 @@ const Registrar = () => {
                 <div className="col-12 mb-3">
                     <input type="text" className="form-control" placeholder="Repetir Password" aria-label="Last name"/>
                 </div>
-                <button type="button" class="btn btn-primary">Registrarme</button>
+                <button type="button" class="btn btn-primary">Registrate</button>
             </div>
         </main>
     </div>
