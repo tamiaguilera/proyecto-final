@@ -17,7 +17,7 @@ const Producto = ()=>{
             setPizza(pizza[0])
             setLoading(false);
         }
-      }, [menu])
+      }, [id, menu])
 
 
 return(
