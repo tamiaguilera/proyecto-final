@@ -338,6 +338,19 @@ main{
         font-size: 1.25rem;
     }
 }
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+/* .iconos-footer{
+   margin-right: 10px;
+   margin-left: 10px;
+} */
+
+.iconos-footer .iconos-footer-logos{
+   margin-right: 24px;
+}
+>>>>>>> Stashed changes
+=======
 .iconos-footer{
    margin-right: 10px;
    margin-left: 10px;
@@ -347,3 +360,4 @@ main{
    margin-right: 24px;
 }
 
+>>>>>>> b086af0e8f504595473dae73a67648b91ff63ed1
