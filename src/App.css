@@ -74,6 +74,7 @@
 
 main{
     width: 80%;
+    padding-top: 90px;
     margin: auto;
     padding: 3rem 0 6rem 0;
     min-height: calc(100vh - 59px);
