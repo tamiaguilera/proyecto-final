@@ -1,7 +1,7 @@
 import {useNavigate} from "react-router-dom"
 import { useContext } from "react"
 import Context from "../context/context.js"
-import Heart from "./Heart.jsx"
+
 
 
 import { formatPrice } from "../utils/utils.js"
@@ -10,7 +10,7 @@ const Menu = ()=>{
     const { menu , addToCart} = useContext(Context)
     const navigate = useNavigate()
 
-    const viewPizza = (id)=> navigate(`/pizza/${id}`)
+    const viewPizza = (id)=> navigate(`/alimento/${id}`)
 
     return(
         <section className="menu">

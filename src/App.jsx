@@ -12,11 +12,13 @@ import Home from './views/Home.jsx'
 import Producto from './views/Producto.jsx'
 import Cart from './views/Cart.jsx'
 import Payment from './views/Payment.jsx'
-import NotFound from './views/NotFound'
-import Likes from './views/Likes'
-
+import NotFound from './views/NotFound.jsx'
+import Likes from './views/Likes.jsx'
+import Registrar from './views/Registrar.jsx'
+import Login from './views/Login.jsx'
 import { formatPrice } from './utils/utils'
-import Carrusel from './components/Carrusel'
+
+
 
 
 
@@ -26,17 +28,17 @@ function App() {
 
 
   const addToCart = (item)=> {
-    const itemIndex = cart.findIndex((pizza)=> pizza.id === item.id)
+    const itemIndex = cart.findIndex((alimento)=> alimento.id === item.id)
     const updateCart = [...cart]
     if(itemIndex === -1){
-      const pizza = {
+      const alimento = {
         id: item.id,
         count: 1,
         price: item.price,
         img: item.img, 
         name: item.name
       }
-      updateCart.push(pizza)
+      updateCart.push(alimento)
     } else {
       updateCart[itemIndex].count+= 1
 
@@ -45,7 +47,7 @@ function App() {
   }
 
   const removeFromCart = (item)=>{
-    const itemIndex = cart.findIndex((pizza)=> pizza.id === item.id)
+    const itemIndex = cart.findIndex((alimento)=> alimento.id === item.id)
     const updateCart = [...cart]
 
     updateCart[itemIndex].count -= 1
@@ -64,7 +66,7 @@ function App() {
   }
 
   useEffect(()=> {
-    fetch('/pizzas.json')
+    fetch('/alimento.json')
       .then((res)=> res.json())
       .then((json)=> setMenu(json))
       .catch((error)=> console.log(error))
@@ -81,13 +83,15 @@ function App() {
         
 
         <Routes>
-          <Route path="/"element={ <Home /> } ></Route>
-          <Route path='/pizza/:id'element={ <Producto/> } ></Route>
+          <Route path="/"element={ <Home/> } ></Route>
+          <Route path='/alimento/:id'element={ <Producto/> } ></Route>
           <Route path='/carrito'element={ <Cart /> } ></Route>
           <Route path='/pagar'element={ <Payment /> } ></Route>
+          <Route path='/registrar' element={ <Registrar /> } ></Route>
           <Route path='*' element={ <NotFound /> } ></Route>
           <Route path='/likes' element={ <Likes /> } ></Route>
-
+          <Route path='*' element={ <Registrar/>} ></Route>
+          <Route path='/login' element={<Login/>}></Route>
         </Routes>
 
         <Footer></Footer>

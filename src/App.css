@@ -1,52 +1,74 @@
 
 .main-nav{
-    background: var(--primary);
+    background: var(--secondary);
     padding: 1.25rem 2.5%;
     box-shadow: var(--shadow);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9;
 }
-.main-nav a {
+.main-nav a{
     color: var(--light);
     text-decoration: none;
+
+}
+.main-nav .row {
+   align-items: center;
+}
+.main-nav .row .links {
+   display: flex;
+}
+.main-nav .row .nav-logo {
+   flex: 1;
 }
 
+.main-nav .row .nav-cart {
+   flex: 0 1 150px;
+   justify-content: flex-start;
+}
+.main-nav .row .nav-login {
+   flex: 0 1 50px;
+   justify-content: flex-start;
+}
+.navbar-brand img {
+   height: 50px;
+}
 .carousel-img{
-   height: 400px;
-   margin-top: 96px;
-
+   height: 100px;
+   margin-top: 100px;
+   width: 100%;
+   display:contents;
+   justify-content: center;
 }
 
 .home-header{
-    margin-top: 63px;
+    margin-top: 1.5rem;
     width: 100%;
-    height: 60vh;
-    background: url(https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1586&q=80);
+    height: 15vh;
+    background: url();
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--light);
+    color: var(--dark);
     text-align: center;
 }
 
-.home-header h1{
+.home-header h2{
     font-size: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
 }
 
 .home header p {
+    color: var(--dark);
     font-size: 1.5rem;
     width: 80%;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0,4);
 }
 
@@ -74,11 +96,11 @@ main{
    right: 20px;
  }
  .card-favorito i{
-   color: rgb(244, 120, 120);
+   color: rgb(216, 101, 101);
    font-size: 30px;
  }
  .card .content{
-    border: 1px solid #ccc;
+    border: 1px solid rgb(155, 155, 155);
  }
 .card .content img{
     width: 100%;
@@ -123,15 +145,17 @@ main{
  }
 
  footer{
+    background: var(--dark);
     text-align: center;
+    color: var(--light);
     padding: 1rem;
-    border-top: 1px solid rgb(217, 121, 57);
-    width: 90%;
+    width: 100%;
     margin: auto;
-    height: 96px;
+    height: 100px;
+   
  }
 
- .pizza-view{
+ .producto-view{
     display: flex;
     flex-wrap: wrap;
     box-shadow: var(--shadow);
@@ -139,21 +163,21 @@ main{
     margin-top: 63px;
  }
 
- .pizza-view .image {
-    width: 30%;
-    background-size: cover;
- }
 
- .pizza-view .image img{
+ .producto-view .image img{
     width: 100%;
  }
+ .producto-view .image{
+   width: 300px;
+   background-size: cover;
+ }
 
- .pizza-view .content{
+ .producto-view .content{
     width: 60%;
     padding: 1rem;
  }
 
- .pizza-view .content h4{
+ .producto-view .content h4{
     text-transform: capitalize;
     font-size: 1.5rem;
     padding-bottom: 1rem;
@@ -161,17 +185,17 @@ main{
     margin-bottom: 1rem;
  }
 
- .pizza-view .desc {
+ .producto-view .desc {
     margin-bottom: 2rem;
 
  }
 
- .pizza-view ul {
+ .producto-view ul {
     margin: 1rem 0;
     padding-left: 2rem;
 
  }
- .pizza-view .price-row{
+ .producto-view .price-row{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -188,7 +212,7 @@ main{
 
  .cart li{
     padding: 1rem;
-    border-bottom: 2px solid #ccd;
+    border-bottom: 2px solid rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -271,11 +295,11 @@ main{
  }
 
  @media (max-width: 768px){
-    .pizza-view .image {
+    .producto-view .image {
         width: 100%;
         height: 30vh;
     }
-    .pizza-view .content{
+    .producto-view .content{
         width: 100%;
      }
  }
@@ -314,6 +338,7 @@ main{
         font-size: 1.25rem;
     }
 }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 /* .iconos-footer{
@@ -325,3 +350,14 @@ main{
    margin-right: 24px;
 }
 >>>>>>> Stashed changes
+=======
+.iconos-footer{
+   margin-right: 10px;
+   margin-left: 10px;
+}
+.iconos-footer .iconos-footer-logos{
+   font-size: 36px;
+   margin-right: 24px;
+}
+
+>>>>>>> b086af0e8f504595473dae73a67648b91ff63ed1

@@ -1,0 +1,76 @@
+[
+  {
+    "desc": "Desarrollado por veterinarios y nutricionistas para satisfacer las necesidades específicas de perros adultos con piel sensible y digestión sensible.",
+    "id": "P001",
+    "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_purinaproplanadultsensitivesalmo-nyarroz368-5grpack5unidades3586.jpg?71",
+    "ingredients": ["mozzarella", "tomates", "jamón", "orégano"],
+    "name": "PURINA PRO PLAN ADULT SENSITIVE SALMÓN Y ARROZ PACK 5 UNIDADES",
+    "price": 13500
+  },
+  {
+    "desc": "Alimento completo y balanceado para gatos poco activos o con exceso de peso.Es una tecnología exclusiva, gracias a la reducción de un 35%* de las grasas, junto con unos niveles elevados de proteínas y fibras naturales, para reducir peso y mantener una condición corporal saludable. *respecto de la fórmula PRO PLAN® Adult con OptiPrebio®",
+    "id": "P002",
+    "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_alimentoparagatosplanpurinaproplanreducedcalorie8442.jpg?71",
+    "ingredients": ["mozzarella", "tomates", "jamón", "choricillo"],
+    "name": "ALIMENTO PARA GATOS PLAN PURINA PRO PLAN REDUCED CALORIE",
+    "price": 25800
+  },
+  {
+    "desc": "Purina Pro Plan Kitten con OptiStart Alimento de alta calidad para gatitos o gatas en periodos de lactancia o gestación. *Para gatitos (hasta el primer año de vida) *Elimina la “brecha inmunológica” y provee nutrición completa que ayuda a los gatitos a crecer fuertes y sanos" ,
+    "id": "P003",
+    "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_purinaproplancatkittenconoptistart1kg3snack3latas4705.jpg?71",
+    "ingredients": ["mozzarella", "tomates", "salame", "orégano"],
+    "name": "PURINA PRO PLAN CAT KITTEN CON OPTISTART 1KG + 3 SNACK + 3 LATAS",
+    "price": 15990
+  },
+  {
+    "desc": "Purina Pro Plan Veterinary Diets Canine EN Gastroenteric es un alimento formulado para ayudar en el tratamiento de trastornos gastroentéricos o estado de convalecencia, desde el destete. También se puede utilizar como auxiliar en el tratamiento de enfermedades pancreáticas y hepáticas no relacionadas a encefalopatía.",
+    "id": "P004",
+    "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_purinaproplanengastroentericcanino8570.jpg?71",
+    "ingredients": ["mozzarella", "salame", "aceitunas", "champiñones"],
+    "name": "PURINA PRO PLAN GASTROENTERIC  CANINO EN VERSIÓN 7.5KG",
+    "price": 39500
+  },
+  {
+    "desc": "La pizza es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+    "id": "P005",
+    "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_purinaproplanengastroentericfelinolata156gr4661.jpg?71",
+    "ingredients": ["mozzarella", "tomates cherry", "bacon", "orégano"],
+    "name": "PURINA PRO PLAN EN GASTROENTERIC FELINO LATA 156GR",
+    "price": 3100
+  },
+  {
+    "desc": "Purina Pro Plan Pouch Adult Cat Salmon en Salsa es un delicioso alimento húmedo para gatos adultos. Sus ingredientes, sabor y consistencia resultan de una aceptación excepcional. Desarrollo de estructura corporal plena, salud dermatológica y sistema inmune fortalecido. Contiene proteína de salmón para mantenimiento de la masa muscular. Aporte óptimo vitaminas y minerales para piel y pelo sanos. ",
+    "id": "P006",
+    "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_purinaproplanpouchadultcatsalmonensalsa85grpack15unidades5040.jpg?71",
+    "ingredients": ["mozzarella", "pimientos", "pollo grillé", "orégano"],
+    "name": "PURINA POUCH ADULT CAT SALMON SALSA 85GR PACK",
+    "price": 16990
+  },
+
+  {
+    "desc": "Purina Pro Plan Pouch Adult Cat Salmon en Salsa es un delicioso alimento húmedo para gatos adultos. Sus ingredientes, sabor y consistencia resultan de una aceptación excepcional. Desarrollo de estructura corporal plena, salud dermatológica y sistema inmune fortalecido. Contiene proteína de salmón para mantenimiento de la masa muscular. Aporte óptimo vitaminas y minerales para piel y pelo sanos. ",
+    "id": "P007",
+    "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_purinaproplanpouchadultcatsalmonensalsa85grpack15unidades5040.jpg?71",
+    "ingredients": ["mozzarella", "pimientos", "pollo grillé", "orégano"],
+    "name": "PURINA POUCH ADULT CAT SALMON SALSA 85GR PACK",
+    "price": 16990
+  },
+  {
+    "desc": "Purina Pro Plan Pouch Adult Cat Salmon en Salsa es un delicioso alimento húmedo para gatos adultos. Sus ingredientes, sabor y consistencia resultan de una aceptación excepcional. Desarrollo de estructura corporal plena, salud dermatológica y sistema inmune fortalecido. Contiene proteína de salmón para mantenimiento de la masa muscular. Aporte óptimo vitaminas y minerales para piel y pelo sanos. ",
+    "id": "P008",
+    "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_purinaproplanpouchadultcatsalmonensalsa85grpack15unidades5040.jpg?71",
+    "ingredients": ["mozzarella", "pimientos", "pollo grillé", "orégano"],
+    "name": "PURINA POUCH ADULT CAT SALMON SALSA 85GR PACK",
+    "price": 16990
+  }
+
+  
+
+
+
+
+
+
+
+]
