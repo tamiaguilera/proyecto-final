@@ -16,9 +16,7 @@
 .main-nav .row {
    align-items: center;
 }
-.main-nav .row .links {
-   display: flex;
-}
+
 .main-nav .row .nav-logo {
    flex: 1;
 }
@@ -151,9 +149,9 @@ main{
     padding: 1rem;
     width: 100%;
     margin: auto;
-    height: 100px;
-   
- }
+    height: 100%;
+    
+}
 
  .producto-view{
     display: flex;
@@ -338,10 +336,7 @@ main{
         font-size: 1.25rem;
     }
 }
-.iconos-footer{
-   margin-right: 10px;
-   margin-left: 10px;
-}
+
 .iconos-footer .iconos-footer-logos{
    font-size: 36px;
    margin-right: 24px;

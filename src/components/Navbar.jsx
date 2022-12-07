@@ -14,7 +14,7 @@ const Navbar = ()=> {
                 <Link to="/" className="navbar-brand logo" href="/"><img src="/img/logo.png" alt="8Vidas" /></Link>
                 </div>
                 <div class="col-1 links nav-login">
-                <Link to="/likes"><i className="fa-solid fa-heart"></i> </Link>
+                <Link to="/likes"><i className="fa-solid fa-heart"></i></Link>
                 </div>
                 <div class="col-1 links nav-login">
                 <Link to="/login"><i className="fa-solid fa-user"></i></Link>
