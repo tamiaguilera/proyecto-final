@@ -74,6 +74,7 @@
 
 main{
     width: 80%;
+    padding-top: 90px;
     margin: auto;
     padding: 3rem 0 6rem 0;
     min-height: calc(100vh - 59px);
@@ -339,20 +340,10 @@ main{
     }
 }
 
-
-/* .iconos-footer{
-   margin-right: 10px;
-   margin-left: 10px;
-} */
-
 .iconos-footer .iconos-footer-logos{
    margin-right: 24px;
 }
 
-.iconos-footer{
-   margin-right: 10px;
-   margin-left: 10px;
-}
 .iconos-footer .iconos-footer-logos{
    font-size: 36px;
    margin-right: 24px;
