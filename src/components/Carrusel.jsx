@@ -4,10 +4,10 @@ const Carrusel = () => {
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-img carousel-inner">
           <div className="carousel-item active">
-            <img src="/img/perros-logo.png" className="d-block w-100" alt="..." />
+            <img src="/img/banner.png" className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src="/img/banner.png" className="d-block w-100" alt="..." />
+            <img src="/img/perros-logo.png" className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
             <img src="/img/gato-logo.png" className="d-block w-100" alt="..." />
