@@ -35,11 +35,12 @@
    height: 50px;
 }
 .carousel-img{
-   height: 100px;
-   margin-top: 100px;
-   width: 100%;
    display:contents;
    justify-content: center;
+}
+
+.carousel-container{
+   margin-top: 90px;
 }
 
 .home-header{
