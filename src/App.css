@@ -73,7 +73,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0,4);
 }
 
-main{
+form{
     width: 80%;
     padding-top: 90px;
     margin: auto;
@@ -119,18 +119,6 @@ main{
 
  .card .content ul{
     padding: 1rem;
- }
-
- .card .ingredients{
-    padding: 0 7.5px;
-    margin-top: 1rem;
-    border-bottom: 1px solid#ccc;
- }
-
- .card .ingredients li{
-    text-transform: capitalize;
-    margin-bottom: 0.25;
-
  }
 
  .card .price{
@@ -232,6 +220,9 @@ main{
     align-items: center;
 
  }
+ .grid-columns-5 {
+   grid-template-columns: repeat(3, 1fr);
+ }
 
  .cart li .product h4{
     font-size: 1.125rem;
@@ -276,8 +267,7 @@ main{
     margin-bottom: 3rem;
 }
 
-.vista-likes {
-   /* margin-top: 96px; */
+.vista-favoritos {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -341,10 +331,7 @@ main{
     }
 }
 
-/* .iconos-footer{
-   margin-right: 10px;
-   margin-left: 10px;
-} */
+
 
 .iconos-footer .iconos-footer-logos{
    margin-right: 24px;

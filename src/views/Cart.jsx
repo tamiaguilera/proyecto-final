@@ -5,8 +5,8 @@ import Context from "../context/context.js"
 const Cart = ()=> {
     const { cart, addToCart, removeFromCart, cartTotal } = useContext(Context)
     return(
-        <main>
-            <div className="cart">
+        <form>
+            <div className=" grid-columns-5 p-3">
                 <h2>Detalles del Pedido</h2>
                 {
                     cart.length !== 0 ?
@@ -19,7 +19,7 @@ const Cart = ()=> {
                     : <p className="empty-cart" > No hay elementos en el carrito</p>
                 }
             </div>
-        </main>
+        </form>
 
     )
 
