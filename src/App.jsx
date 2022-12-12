@@ -17,6 +17,7 @@ import Likes from './views/Likes.jsx'
 import Registrar from './views/Registrar.jsx'
 import Login from './views/Login.jsx'
 import { formatPrice } from './utils/utils'
+import MiPerfil from './views/MiPerfil'
 
 
 
@@ -91,6 +92,7 @@ function App() {
           <Route path='*' element={ <NotFound /> } ></Route>
           <Route path='/likes' element={ <Likes /> } ></Route>
           <Route path='*' element={ <Registrar/>} ></Route>
+          <Route path='/mi-perfil' element={<MiPerfil/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
         </Routes>
 

@@ -341,10 +341,6 @@ main{
     }
 }
 
-/* .iconos-footer{
-   margin-right: 10px;
-   margin-left: 10px;
-} */
 
 .iconos-footer .iconos-footer-logos{
    margin-right: 24px;
@@ -353,6 +349,15 @@ main{
 .iconos-footer .iconos-footer-logos{
    font-size: 36px;
    margin-right: 24px;
+}
+
+.perfil{
+   margin-top: 3rem;
+
+}
+
+.icono-perfil{
+   font-size: 3rem;
 }
 
 
