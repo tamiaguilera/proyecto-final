@@ -38,5 +38,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://desafio-latam-api.herokuapp.com"
+  "proxy": "https://desafio-latam-api.herokuapp.com",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
