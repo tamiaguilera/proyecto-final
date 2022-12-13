@@ -6,7 +6,7 @@ const Cart = ()=> {
     const { cart, addToCart, removeFromCart, cartTotal } = useContext(Context)
     return(
         <form>
-            <div className=" grid-columns-5 p-3">
+            <div className="cart">
                 <h2>Detalles del Pedido</h2>
                 {
                     cart.length !== 0 ?
