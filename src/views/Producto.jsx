@@ -8,13 +8,13 @@ const Producto = ()=>{
     const { id } = useParams()
     const { menu, addToCart} = useContext(Context)
 
-    const [producto, setPizza] = useState({ingredients: [],price: 0, img: ''})
+    const [producto, setProducto] = useState({ingredients: [],price: 0, img: ''})
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
         if(menu.length > 0){
             const producto = menu.filter((item)=> item.id === id)
-            setPizza(producto[0])
+            setProducto(producto[0])
             setLoading(false);
         }
       }, [id, menu])

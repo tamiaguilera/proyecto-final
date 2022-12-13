@@ -10,10 +10,10 @@ const Menu = ()=>{
     const { menu , addToCart} = useContext(Context)
     const navigate = useNavigate()
 
-    const viewPizza = (id)=> navigate(`/alimento/${id}`)
+    const viewProducto = (id)=> navigate(`/alimento/${id}`)
 
     return(
-        <section className="menu">
+        <section className="menu ">
             {
                 menu.map((item)=> {
                     return (
@@ -24,11 +24,10 @@ const Menu = ()=>{
                                     <i className="fa-solid fa-heart" />
                                 </div>
                                 <h4>{item.name}</h4>
-                                  
-                                <h3 className="price">$ {formatPrice (item.price) }</h3>
+                                  <h3 className="price">$ {formatPrice (item.price) }</h3>
 
                                 <div className="btn-row">
-                                    <button className="btn btn-primary" onClick={()=> viewPizza(item.id)} >Ver más</button>
+                                    <button className="btn btn-primary" onClick={()=> viewProducto(item.id)} >Ver más</button>
                                     <button className="btn btn-secondary" onClick={()=> addToCart(item)}>Añadir</button>
                                 </div>
                             </div>
@@ -39,8 +38,6 @@ const Menu = ()=>{
             }
 
         </section>
-
-
     )
 
 }
