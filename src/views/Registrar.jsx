@@ -65,7 +65,7 @@ const Registrar = () => {
                         </div>}
                 </div>
                 <div className="col-12 mb-3">
-                    <input type="text" 
+                    <input type="password"
                         className="form-control" 
                         id="validationCustom03" 
                         aria-invalid={errors.contrasena1 ? "true" : "false"}
@@ -77,7 +77,7 @@ const Registrar = () => {
                         </div>}
                 </div>
                 <div className="col-12 mb-3">
-                    <input type="text" 
+                    <input type="password" 
                         className="form-control" 
                         id="validationCustom03" 
                         aria-invalid={errors.contrasena2 ? "true" : "false"}
