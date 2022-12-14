@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Context from '../context/context'
 
@@ -10,6 +10,9 @@ const Login = () => {
     const [password, setPassword] = useState('')
     const [error, setError] = useState(false)
     const {setSession} = useContext(Context)
+    useEffect( () => {
+        window.scrollTo(0, 0);
+    },[])
 
     const login = (e)=>{
         e.preventDefault()

@@ -5,7 +5,7 @@ import Context from "../context/context.js";
 import { formatPrice } from "../utils/utils.js";
 
 const Menu = () => {
-  const { menu, addToCart, favorites, addFavorities } = useContext(Context);
+  const { menu, addToCart, favorites, addFavorities, session } = useContext(Context);
   const navigate = useNavigate();
 
   const viewProducto = (id) => navigate(`/alimento/${id}`);
@@ -19,6 +19,11 @@ const Menu = () => {
               <div className="corazon">
                 <i
                   onClick={() => {
+                    if (session != null) {
+                      addFavorities(item.id); 
+                    } else{
+                      navigate('/login')
+                    }
                     addFavorities(item.id);
                   }}
                   className={`${
@@ -39,7 +44,13 @@ const Menu = () => {
                 </button>
                 <button
                   className="btn btn-secondary"
-                  onClick={() => addToCart(item)}
+                  onClick={() => {
+                    if (session != null) {
+                      addToCart(item)
+                    } else{
+                      navigate('/login')
+                    }
+                  }}
                 >
                   Añadir
                 </button>
