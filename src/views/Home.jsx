@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom"
 import Carrusel from "../components/Carrusel.jsx"
 import CardList from "../components/CardList.jsx"
 import Header from "../components/Header.jsx"
