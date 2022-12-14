@@ -307,12 +307,13 @@ footer{
    margin-bottom: 3rem;
 }
 
-.vista-favoritos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-  min-height: calc(100vh - 128px);
+.vista-fav {
+  margin-top: 6rem;
+}
+
+.vista-fav h1 {
+   text-align: center;
+   font-size: 4rem;
 }
 
 .payment i {

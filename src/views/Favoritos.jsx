@@ -1,14 +1,17 @@
-import Carrusel from "../components/Carrusel.jsx";
+// in
 import FavoritiesList from "../components/FavoritiesList";
-import Header from "../components/Header.jsx";
 
 const Favoritos = () => {
+  // const navigate = useNavigate();
+
+  // const logout = () => {
+  //   localStorage.removeItem("token");
+  //   navigate("/login");
+  // };
   return (
     <div>
-      <Carrusel />
-      <Header></Header>
-
-      <main>
+      <main className="vista-fav">
+        <h1>Tus productos favoritos</h1>
         <FavoritiesList />
       </main>
     </div>
