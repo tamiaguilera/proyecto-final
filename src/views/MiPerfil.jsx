@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Context from "../context/context";
 
 const MiPerfil = ()=> {
 
     const navigate = useNavigate()
-    const {session, setSession} = useContext(Context)
+    const {session, setSession, favorites} = useContext(Context)
 
     const logout = ()=> {
         localStorage.removeItem('token')
@@ -30,7 +30,7 @@ const MiPerfil = ()=> {
                 <button type="button" className="btn btn-outline-danger" onClick={()=> logout()}>Cerrar Sesión</button>
             </div>
             <div className="col-12 mt-4">
-                <button type="button" className="btn btn-link">Favoritos (0)</button>
+                <Link type="button" to="/favoritos" className="btn btn-link">Favoritos ({favorites.length})</Link>
             </div>
 
 
