@@ -1,12 +1,12 @@
-import './App.css'
+import "./App.css";
 
-import ProtectedRoute from './components/ProtectedRouter.jsx'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { useState, useEffect } from 'react'
-import Context from './context/context.js'
+import ProtectedRoute from "./components/ProtectedRouter.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import Context from "./context/context.js";
 
-import Navbar from './components/Navbar.jsx'
-import Footer from './components/Footer.jsx'
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 import Home from './views/Home.jsx'
 import Producto from './views/Producto.jsx'
@@ -24,6 +24,7 @@ import MiPerfil from './views/MiPerfil'
 function App() {
   const [menu, setMenu] = useState([])
   const [cart, setCart] = useState([])
+  const [favorites, setFavorities] = useState([]);
   let miSesion = null;
 
   if(localStorage.getItem('token') != null){
@@ -39,46 +40,66 @@ function App() {
         id: item.id,
         count: 1,
         price: item.price,
-        img: item.img, 
-        name: item.name
-      }
-      updateCart.push(alimento)
+        img: item.img,
+        name: item.name,
+      };
+      updateCart.push(alimento);
     } else {
-      updateCart[itemIndex].count+= 1
-
+      updateCart[itemIndex].count += 1;
     }
-    setCart(updateCart)
-  }
+    setCart(updateCart);
+  };
 
-  const removeFromCart = (item)=>{
-    const itemIndex = cart.findIndex((alimento)=> alimento.id === item.id)
-    const updateCart = [...cart]
-    console.log(itemIndex)
-    updateCart[itemIndex].count -= 1
-    console.log(updateCart)
-    if(updateCart[itemIndex].count <= 0){
-      updateCart.splice(itemIndex, 1)
+  const removeFromCart = (item) => {
+    const itemIndex = cart.findIndex((alimento) => alimento.id === item.id);
+    const updateCart = [...cart];
+
+    updateCart[itemIndex].count -= 1;
+
+    if (updateCart[itemIndex].count <= 0) {
+      updateCart.splice(itemIndex, 1);
     }
-    setCart(updateCart)
-  }
+    setCart(updateCart);
+  };
 
-  const cartTotal = ()=>{
-    let total = 0
-    cart.forEach((item)=> total += item.count * item.price)
+  const addFavorities = (id) => {
+    if (favorites.includes(id)) {
+      const diff = favorites.filter((element) => element !== id);
+      setFavorities(diff);
+    } else {
+      setFavorities([...favorites, id]);
+    }
+  };
 
-    return formatPrice(total)
-  }
+  const cartTotal = () => {
+    let total = 0;
+    cart.forEach((item) => (total += item.count * item.price));
 
-  useEffect(()=> {
-    fetch('/alimento.json')
-      .then((res)=> res.json())
-      .then((json)=> setMenu(json))
-      .catch((error)=> console.log(error))
-  }, [])
+    return formatPrice(total);
+  };
 
-  const globalState = {menu, cart, addToCart, removeFromCart, cartTotal, session, setSession }
 
-return (
+
+  useEffect(() => {
+    fetch("/alimento.json")
+      .then((res) => res.json())
+      .then((json) => setMenu(json))
+      .catch((error) => console.log(error));
+  }, []);
+
+  const globalState = {
+    menu,
+    cart,
+    favorites,
+    addToCart,
+    removeFromCart,
+    cartTotal,
+    addFavorities,
+	session, 
+	setSession
+  };
+
+  return (
     <div className="App">
       <Context.Provider value={globalState}>
         <BrowserRouter>

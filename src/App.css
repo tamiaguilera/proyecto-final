@@ -82,7 +82,7 @@ form{
 }
 
 main{
-  width: 80%;
+  /* width: 98%; */
    padding-top: 90px;
    margin: auto;
    padding: 3rem 0 6rem 0;
@@ -92,12 +92,29 @@ main{
    width: 100%;
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
+}
+
+.corazon {
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 10px;
+   margin-right: 10px;
+   font-size: 30px;
+   color: red;
 }
 
 .card{
-   width: 25%;
+   width: 20%;
    padding: 1rem;
+   margin: 1rem;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);;
+   transition: 0.3s;
 }
+
+.card:hover {
+   transform: scale(1.1);
+ }
 
 .card-favorito{
   position: absolute;

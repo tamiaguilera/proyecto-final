@@ -1,9 +1,18 @@
-const Favoritos = ()=> {
-    return (
-        <div className="vista-favoritos">
-            <h1>Tus Productos Favoritos</h1>
-        </div>
-    )
-}
+import Carrusel from "../components/Carrusel.jsx";
+import FavoritiesList from "../components/FavoritiesList";
+import Header from "../components/Header.jsx";
 
-export default Favoritos
+const Favoritos = () => {
+  return (
+    <div>
+      <Carrusel />
+      <Header></Header>
+
+      <main>
+        <FavoritiesList />
+      </main>
+    </div>
+  );
+};
+
+export default Favoritos;
