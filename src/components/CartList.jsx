@@ -34,12 +34,8 @@ const CartList = ({ cart, addToCart, removeFromCart, cartTotal })=>{
             <div className="total" >
                 <h3>Total: ${cartTotal()}</h3>
                 <Link to="/pagar" className="btn  btn-primary" >Ir a pagar</Link>
-
             </div>
-
        </div>
-
-
     )
 
 }
