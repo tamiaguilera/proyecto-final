@@ -34,9 +34,12 @@ const Menu = () => {
                         <div className="card" key={item.id}>
                             <div className="content"
                             >
+                                <div className="corazon">
+                                <i onClick={() => { handleFavoritos2(item.id) }} className={`${fill.includes(item.id) ? "fa-solid" : "fa-regular"} fa-heart`}></i>
+                                </div>
                                 <img src={item.img} alt={item.name} />
                                 {/* style={{backgroundImage: `url(${foto.src.portrait})`}}> */}
-                                <i onClick={() => { handleFavoritos2(item.id) }} className={`${fill.includes(item.id) ? "fa-solid" : "fa-regular"} fa-heart`}></i>
+                                
 
 
                                 <h4>{item.name}</h4>

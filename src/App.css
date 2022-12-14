@@ -94,6 +94,15 @@ main{
    flex-wrap: wrap;
 }
 
+.corazon {
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 10px;
+   margin-right: 10px;
+   font-size: 30px;
+   color: red;
+}
+
 .card{
    width: 25%;
    padding: 1rem;
