@@ -1,22 +1,17 @@
-import { useNavigate } from "react-router-dom";
-import Carrusel from "../components/Carrusel.jsx";
+// in
 import FavoritiesList from "../components/FavoritiesList";
-import Header from "../components/Header.jsx";
 
 const Favoritos = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const logout = () => {
-    localStorage.removeItem("token");
-    navigate("/login");
-  };
+  // const logout = () => {
+  //   localStorage.removeItem("token");
+  //   navigate("/login");
+  // };
   return (
     <div>
-      <Carrusel />
-      <Header></Header>
-
-      <main>
-        <button onClick={() => logout()}>Logout</button>
+      <main className="vista-fav">
+        <h1>Tus productos favoritos</h1>
         <FavoritiesList />
       </main>
     </div>
