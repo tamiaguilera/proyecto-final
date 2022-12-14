@@ -1,29 +1,38 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Context from '../context/context'
 
 const Login = () => {
     const navigate = useNavigate()
     
-    const [ user, setUser ] = useState('')
-    const [password, setPassword ] = useState('')
+    const [user, setUser] = useState('')
+    const [password, setPassword] = useState('')
     const [error, setError] = useState(false)
-    
-    
-    const loginData = {
-        user: 'admin',
-        password: 'admin123'
-    }
-    
+    const {setSession} = useContext(Context)
+
     const login = (e)=>{
         e.preventDefault()
-
-        if(user === loginData.user && password === loginData.password){
-            localStorage.setItem('token', 'test_token_123456789')
-           navigate('/')
-        }else{
-           setError(true)
+        fetch('api/usuarios/validar', 
+        {
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            method: 'POST',
+            body: JSON.stringify({correo: user, contrasena: password})
         }
+        )
+        .then( resp => resp.json())
+        .then( resp => {
+            console.log(resp);
+            if(resp.status){
+                localStorage.setItem('token', JSON.stringify(resp));
+                setSession(resp);
+                navigate('/');
+            }else{
+                setError(true)
+            }
+        })
     }
 
     return(
