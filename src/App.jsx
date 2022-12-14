@@ -23,6 +23,7 @@ import Favoritos from './views/Favoritos.jsx'
 function App() {
   const [menu, setMenu] = useState([])
   const [cart, setCart] = useState([])
+  const [favoritos, setFavoritos] = useState([])
 
 
   const addToCart = (item)=> {
@@ -70,7 +71,7 @@ function App() {
       .catch((error)=> console.log(error))
   }, [])
 
-  const globalState = {menu, cart, addToCart, removeFromCart, cartTotal }
+  const globalState = {menu, cart, favoritos, addToCart, removeFromCart, cartTotal, }
 
 return (
     <div className="App">
